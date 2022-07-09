@@ -1,0 +1,32 @@
+{
+  "name": "proxy-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Holgermueller/proxy-server.git"
+  },
+  "author": "Holger Mueller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Holgermueller/proxy-server/issues"
+  },
+  "homepage": "https://github.com/Holgermueller/proxy-server#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "apicache": "^1.6.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-rate-limit": "^6.4.0",
+    "needle": "^3.1.0"
+  }
+}
