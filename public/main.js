@@ -19,7 +19,7 @@ const fetchWeather = async (city) => {
 
   const displayData = {
     city: data.name,
-    temp: kelvinToFahrenheit(data.name.temp),
+    temp: kelvinToFahrenheit(data.main.temp),
   };
   addWeatherToDOM(displayData);
 };
