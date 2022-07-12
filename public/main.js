@@ -11,13 +11,9 @@ const initialFetch = async () => {
   getLocation();
 
   async function showPosition(position) {
-    console.log(position.coords);
-
     const url = `/api?lat=${position.coords.latitude}&lon=${position.coords.longitude}`;
     const res = await fetch(url);
     const data = await res.json();
-
-    console.log(res);
 
     if (data.cod === "404") {
       alert("City not found");
